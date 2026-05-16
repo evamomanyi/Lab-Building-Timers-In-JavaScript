@@ -12,7 +12,15 @@
  */
 function delayedReminder(message, delay) {
   // Return a promise
-  // Use setTimeout to log the message after the specified delay
+return new Promise((reminder) => {
+    setTimeout(()=> {
+    console.log("This is your reminder!")
+// Use setTimeout to log the message after the specified delay
+    reminder("This is your reminder!")
+}, 3000)
+  
+});
+
   // Resolve the promise once the message is logged
 }
 
